@@ -1,14 +1,22 @@
 module.exports = [
   {text: '首页', link: '/'},
   {
-    text: '前端',
+    text: '前端基础', 
+    link: '/ui/',
+    items: [
+      {text: 'HTML', link: '/pages/8309a5b876fc95e3/'},
+      {text: 'CSS', link: '/pages/0a83b083bdf257cb/'},
+    ]
+  },
+  {
+    text: '前端进阶',
     link: '/web/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
-      {text: '前端文章', items: [
+      {text: 'JavaScript 系列', items: [
         {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
         {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
       ]},
-      {text: '学习笔记', items:[
+      {text: 'Vue 系列', items:[
         {text: '《JavaScript教程》笔记', link: '/note/javascript/'},
         {text: '《ES6 教程》笔记', link: '/note/es6/'},
         {text: '《Vue》笔记', link: '/note/vue/'},
@@ -19,16 +27,62 @@ module.exports = [
     ]
   },
   {
-    text: '页面', 
-    link: '/ui/',
+    text: '前端进阶',
+    link: '/advanced/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
-      {text: 'HTML', link: '/pages/8309a5b876fc95e3/'},
-      {text: 'CSS', link: '/pages/0a83b083bdf257cb/'},
+      {
+        text: '浏览器系列', 
+        items: [
+          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
+          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
+        ]
+      },
+      {
+        text: '性能优化系列', 
+        items: [
+          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
+          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
+        ]
+      },
+      {
+        text: '前端工程系列', 
+        items:[
+          {text: '《JavaScript教程》笔记', link: '/note/javascript/'}
+        ]
+      }
     ]
   },
+
   {
-    text: '技术',
-    link: '/technology/',
+    text: '计算机基础',
+    link: '/technology/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      {
+        text: '数据结构和算法', 
+        items: [
+          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
+          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
+        ]
+      },
+      {
+        text: '计算机网络', 
+        items: [
+          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
+          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
+        ]
+      },
+      {
+        text: '编译原理', 
+        items:[
+          {text: '《JavaScript教程》笔记', link: '/note/javascript/'}
+        ]
+      }
+    ]
+  },
+
+  {
+    text: '项目',
+    link: '/project/',
     items: [
       {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
       {text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'},
@@ -53,24 +107,24 @@ module.exports = [
       ]}
     ]
   },
-  {
-    text: '读书派', 
-    link: '/bookssent/',
-    items: [
-      {text: '摘抄收录', items: [
-        {text: '☆ 励志鸡汤', link: '/ChickenSoup/'},
-        {text: '❀ 人间烟火', link: '/PassionLife/'},
-        {text: '☣ 万物沦丧', link: '/ThingsLost/'},
-        {text: '✌ 关掉烦恼', link: '/NoTrouble/'},
-        {text: '✲ 小酒馆', link: '/Bistro/'}
-      ]}, //link: '/pages/wordsof/'}
-      {text: '读书笔记', items: [
-        {text: '《小狗钱钱》', link: '/note/xgqq/'},
-        {text: '《穷爸爸富爸爸》', link: '/note/qbbfbb/'},
-        {text: '《聪明人使用方格笔记本》', link: '/note/cmrsyfgbjb/'}
-      ]}
-    ]
-  },
+  // {
+  //   text: '读书派', 
+  //   link: '/bookssent/',
+  //   items: [
+  //     {text: '摘抄收录', items: [
+  //       {text: '☆ 励志鸡汤', link: '/ChickenSoup/'},
+  //       {text: '❀ 人间烟火', link: '/PassionLife/'},
+  //       {text: '☣ 万物沦丧', link: '/ThingsLost/'},
+  //       {text: '✌ 关掉烦恼', link: '/NoTrouble/'},
+  //       {text: '✲ 小酒馆', link: '/Bistro/'}
+  //     ]}, //link: '/pages/wordsof/'}
+  //     {text: '读书笔记', items: [
+  //       {text: '《小狗钱钱》', link: '/note/xgqq/'},
+  //       {text: '《穷爸爸富爸爸》', link: '/note/qbbfbb/'},
+  //       {text: '《聪明人使用方格笔记本》', link: '/note/cmrsyfgbjb/'}
+  //     ]}
+  //   ]
+  // },
   {
     text: '更多', 
     link: '/more/',

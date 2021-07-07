@@ -13,7 +13,7 @@ cd docs/.vuepress/dist
 #echo 'b.xugaoyi.com' > CNAME
 
   msg='deploy'
-  githubUrl=git@github.com:JefferyXZF/jeffery-blog-page.git
+  githubUrl=git@github.com:JefferyXZF/jeffery-blog.git
 # if [ -z "$GITHUB_TOKEN" ]; then
 # else
 #   msg='来自github actions的自动部署'

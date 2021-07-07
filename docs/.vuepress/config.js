@@ -1,11 +1,11 @@
 const nav = require('./config/nav.js');
 
 module.exports = {
-  title: "jeffery",
-  description: '让自己变得更好，是解决问题的关键', // 描述,以 <meta> 标签渲染到页面html中
+  title: "jeffery's blog",
+  description: '前端博客, 个人技术博客, 前端, 前端开发', // 描述,以 <meta> 标签渲染到页面html中
   base: '/jeffery-blog/', // '/<github仓库名>/'， 默认'/' 
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/milu.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/avatar.jpeg' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown'}],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
     ['meta', { name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
@@ -21,8 +21,8 @@ module.exports = {
   themeConfig: { // 主题配置
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/milu.png', // 导航栏logo
-    repo: 'miluluyo/vdoingBlog', // 导航栏右侧生成Github链接
+    logo: '/img/avatar.jpeg', // 导航栏logo
+    repo: 'JefferyXZF/jeffery-blog', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -55,12 +55,12 @@ module.exports = {
     
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
       name: 'jeffery', // 必需
-      link: 'https://github.com/miluluyo' // 可选的
+      link: 'https://github.com/JefferyXZF' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
-      avatar: '/vdoingBlog/img/tx.jpg',
-      name: 'jeffery',
-      slogan: '前端小菜鸡(✪ω✪)'
+      avatar: '/img/avatar.jpeg',
+      name: '志非',
+      slogan: '进击吧，前端小蜗牛'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -68,12 +68,12 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'https://msg.cnblogs.com/send/%E9%BA%8B%E9%B9%BF%E9%B2%81%E5%93%9F'
+          link: 'mailto:1987458665@qq.com?subject=test&cc=1987458665@qq.com&body=use mailto sample'
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/miluluyo'
+          link: 'https://github.com/JefferyXZF'
         },
         {
           iconClass: 'icon-erji',
@@ -83,8 +83,8 @@ module.exports = {
       ]
     },
     footer:{ // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'jeffery | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      createYear: 2020, // 博客创建年份
+      copyrightInfo: 'jeffery | <a href="https://github.com/JefferyXZF/jeffery-blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     }
   },
   plugins: [ // 插件
@@ -113,8 +113,8 @@ module.exports = {
           frontUrl: 'https://cn.bing.com/search?q='
         },
         {
-          title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20'
+          title: '百度搜索',
+          frontUrl: 'https://www.baidu.com/'
         }
       ]
     }],
@@ -168,9 +168,9 @@ module.exports = {
         options: {
           clientID: '714fa71d5852fd111050',
           clientSecret: '7d111a2f0cd9c24fa53482077c4cced062f9916f',
-          repo: 'vdoingBlog', // GitHub 仓库
-          owner: 'miluluyo', // GitHub仓库所有者
-          admin: ['miluluyo'], // 对仓库有写权限的人
+          repo: 'jeffery-blog', // GitHub 仓库
+          owner: 'JefferyXZF', // GitHub仓库所有者
+          admin: ['JefferyXZF'], // 对仓库有写权限的人
           distractionFreeMode: false,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50

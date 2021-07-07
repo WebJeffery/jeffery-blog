@@ -1,8 +1,8 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: 麋鹿鲁哟
-tagline: 运气交给锦鲤，你只管努力就好。
+heroText: jeffery
+tagline: 用代码改变人生
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: custom #custom自定义 # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
@@ -16,7 +16,7 @@ features: # 可选的
     details: 技术文档、教程、技巧、总结等文章
     link: /technology/
     imgUrl: /img/2.png
-  - title: 面试
+  - title: 进阶
     details: 题目及答案总结等
     link: /interview/
     imgUrl: /img/3.png

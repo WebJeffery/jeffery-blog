@@ -45,6 +45,7 @@ export default {
   .avatar
     width 235px
     height 235px
+    border-radius 50%
     overflow hidden
     @media (max-width 900px)
       width 205px
@@ -70,6 +71,7 @@ export default {
         color $accentColor
   .blogger
     margin 12px 0 2px 0
+    text-align center
     .name
       font-size 1.4rem
       display: block
