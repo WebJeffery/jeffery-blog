@@ -58,7 +58,7 @@ module.exports = {
       link: 'https://github.com/JefferyXZF' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
-      avatar: '/img/avatar.jpeg',
+      avatar: '/jeffery-blog/img/avatar.jpeg',
       name: '志非',
       slogan: '进击吧，前端小蜗牛'
     },
