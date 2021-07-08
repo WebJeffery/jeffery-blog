@@ -20,22 +20,23 @@ module.exports = [
     items: [
       {
         text: 'JavaScript 基础', 
-        items: [
-          {text: '《JavaScript教程》笔记', link: '/note/javascript/'},
-        ]
+        link: '/pages/cseweew/',
       },
       {
-        text: 'JavaScript 进阶', 
-        items: [
-          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
-        ]
+        text: 'JavaScript 进阶',
+        link: '/pages/adewebd/',
       },
       {
-        text: 'JavaScript 手写代码', 
-        items: [
-          {text: '《ES6 教程》笔记', link: '/note/es6/'},
-          {text: 'JavaScript 基础', link: '/note/javascriptbasics/'}
-        ]
+        text: 'JavaScript 高级', 
+        link: '/pages/weweadse/',
+      },
+      {
+        text: 'JavaScript 手写实践', 
+        link: '/pages/wewefss/',
+      },
+      {
+        text: 'JavaScript 设计模式', 
+        link: '/pages/faee3see/',
       }
     ]
   },
@@ -48,8 +49,8 @@ module.exports = [
         items:[
           {text: '组件化', link: '/pages/802a1ca6f7b71c59/'},
           {text: 'Vue 性能优化', link: '/note/vue/'},
-          {text: 'Vue 实践', link: '/note/vue/'},
-          {text: 'Vue 源码', link: '/note/vue/'}
+          {text: 'Vue 实践', link: '/note/vue1/'},
+          {text: 'Vue 源码', link: '/note/vue2/'}
         ]
       }
     ]
@@ -182,9 +183,9 @@ module.exports = [
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
     items: [
-      {text: '工具', link: '/pages/beb6c0bd8a66cea6/'},
+      {text: '工具', link: '/pages/beb6cwe0bd8a66cea6/'},
       {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
-      {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
+      {text: '网站', link: '/pages/beb6c0bd8a6dd6cea6/'},
       {text: '资源', link: '/pages/eee83a9211a70f9d/'},
     ]
   },
