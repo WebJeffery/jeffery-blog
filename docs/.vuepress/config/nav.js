@@ -20,7 +20,7 @@ module.exports = [
     items: [
       {
         text: 'JavaScript 基础', 
-        link: '/pages/cseweew/',
+        link: '/pages/23a3errwdasweew/',
       },
       {
         text: 'JavaScript 进阶',
