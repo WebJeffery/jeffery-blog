@@ -16,7 +16,8 @@ module.exports = {
   },
 
   theme: 'vdoing', // 使用依赖包主题
-  theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  theme: require.resolve('../../theme-vdoing-1.8.3'), // 使用本地主题
+  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   themeConfig: { // 主题配置
     nav,
@@ -26,7 +27,7 @@ module.exports = {
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
-    editLinks: true, // 启用编辑
+    editLinks: false, // 启用编辑
     editLinkText: '编辑',
 
     // 以下配置是Vdoing主题改动和新增的配置
@@ -93,31 +94,33 @@ module.exports = {
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // }],
 
-    ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
-      thirdparty: [ // 可选，默认 []
-        {
-          title: '在MDN中搜索',
-          frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-          behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
-        },
-        {
-          title: '在Runoob中搜索',
-          frontUrl: 'https://www.runoob.com/?s=',
-        },
-        {
-          title: '在Vue API中搜索',
-          frontUrl: 'https://cn.vuejs.org/v2/api/#',
-        },
-        {
-          title: '在Bing中搜索',
-          frontUrl: 'https://cn.bing.com/search?q='
-        },
-        {
-          title: '百度搜索',
-          frontUrl: 'https://www.baidu.com/'
-        }
-      ]
-    }],
+    [
+      'thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
+        thirdparty: [ // 可选，默认 []
+          {
+            title: '在MDN中搜索',
+            frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
+            behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
+          },
+          {
+            title: '在Runoob中搜索',
+            frontUrl: 'https://www.runoob.com/?s=',
+          },
+          {
+            title: '在Vue API中搜索',
+            frontUrl: 'https://cn.vuejs.org/v2/api/#',
+          },
+          {
+            title: '在Bing中搜索',
+            frontUrl: 'https://cn.bing.com/search?q='
+          },
+          {
+            title: '百度搜索',
+            frontUrl: 'https://www.baidu.com/'
+          }
+        ]
+      }
+    ],
 
     'vuepress-plugin-baidu-autopush', // 百度自动推送
 
@@ -166,8 +169,8 @@ module.exports = {
       {
         choosen: 'gitalk', 
         options: {
-          clientID: '714fa71d5852fd111050',
-          clientSecret: '7d111a2f0cd9c24fa53482077c4cced062f9916f',
+          clientID: 'Iv1.cf034f00893cb950',
+          clientSecret: '147694e9c990013cccb9bcb285501a08ddf2b387',
           repo: 'jeffery-blog', // GitHub 仓库
           owner: 'JefferyXZF', // GitHub仓库所有者
           admin: ['JefferyXZF'], // 对仓库有写权限的人
