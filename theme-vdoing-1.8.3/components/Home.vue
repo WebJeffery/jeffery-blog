@@ -353,7 +353,7 @@ export default {
       overflow hidden
       .hero
         text-align center
-        margin-top 3rem
+        margin-top 4rem
         img
           max-width 100%
           max-height 240px

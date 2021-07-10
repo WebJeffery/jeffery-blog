@@ -50,6 +50,7 @@ export default {
     img
       width 100%
       height 100%
+      border-radius 50%
   .icons
     // border 1px solid var(--borderColor)
     border-top none
@@ -71,6 +72,8 @@ export default {
       font-size 1.3rem
       display block
       margin-bottom 6px
+      text-align center
     .slogan
       color var(--textColor)
+      font-size 0.8rem
 </style>

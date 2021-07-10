@@ -57,18 +57,29 @@ h1, h2, h3, h4, h5, h6
         display inline-block
         float right
         padding 1rem 0
+        overflow hidden
         p
           margin 0
           padding 0 1rem
           transition text-shadow .4s
-          text-align center
         .name
           margin .2rem 0 .3rem 0
+          text-align left
+          white-space nowrap
+          text-overflow ellipsis
+          overflow hidden
+          
         .desc
+          text-align left
           font-size .8rem
           line-height 1.1rem
           opacity .8
           margin-bottom .2rem
+          text-overflow ellipsis
+          overflow hidden
+          display: -webkit-box;
+          -webkit-line-clamp: 2; //多行在这里修改数字即可
+          -webkit-box-orient: vertical;
     .card-item.row-1
       width calc(100% - .7rem)
       img

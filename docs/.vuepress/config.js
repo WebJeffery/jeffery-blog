@@ -2,7 +2,7 @@ const nav = require('./config/nav.js');
 
 module.exports = {
   title: "jeffery's blog",
-  description: '前端博客, 个人技术博客, 前端, 前端开发', // 描述,以 <meta> 标签渲染到页面html中
+  description: '前端博客, 技术, 前端, 前端开发', // 描述,以 <meta> 标签渲染到页面html中
   base: '/jeffery-blog/', // '/<github仓库名>/'， 默认'/' 
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/avatar.jpeg' }], //favicons，资源放在public文件夹
@@ -169,17 +169,17 @@ module.exports = {
       {
         choosen: 'gitalk', 
         options: {
-          clientID: 'Iv1.cf034f00893cb950',
-          clientSecret: '147694e9c990013cccb9bcb285501a08ddf2b387',
+          clientID: '6678242ed749dfc3d689',
+          clientSecret: '2ecbc3fd818fc17842e4ca79afd481f94b4ae73a',
           repo: 'jeffery-blog', // GitHub 仓库
           owner: 'JefferyXZF', // GitHub仓库所有者
           admin: ['JefferyXZF'], // 对仓库有写权限的人
           distractionFreeMode: false,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+          id: "<%- (window.location.origin + (frontmatter.to.path || window.location.pathname)).slice(-50) %>", //  页面的唯一标识,长度不能超过50
+          title: "「评论」<%- document.title %>", // GitHub issue 的标题
           labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+          body:"<%- document.title %>：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
         }
       }
     ],

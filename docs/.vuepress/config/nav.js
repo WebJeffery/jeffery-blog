@@ -16,7 +16,7 @@ module.exports = [
   },
   {
     text: 'JavaScript',
-    link: '/javascript/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    link: '/web/javascript/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
         text: 'JavaScript 基础', 
@@ -183,10 +183,10 @@ module.exports = [
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
     items: [
-      {text: '工具', link: '/pages/beb6cwe0bd8a66cea6/'},
+      {text: '学习资源', link: '/pages/eee83a9211a70f9d/'},
+      // {text: '工具', link: '/pages/beb6cwe0bd8a66cea6/'},
       {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
-      {text: '网站', link: '/pages/beb6c0bd8a6dd6cea6/'},
-      {text: '资源', link: '/pages/eee83a9211a70f9d/'},
+      {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
     ]
   },
   {
