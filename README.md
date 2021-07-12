@@ -5,3 +5,11 @@
 [vuepress-plugin-comment文档](https://vuepress-theme-hope.github.io/comment/zh/)
 
 
+## 代码块
+
+**vuepress-plugin-demo-code**
+
+- [文档](https://buptsteve.github.io/vuepress-plugin-demo-code/zh/)
+- [github](https://github.com/BuptStEve/vuepress-plugin-demo-code)
+
+

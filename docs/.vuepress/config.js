@@ -1,4 +1,5 @@
 const nav = require('./config/nav.js');
+const demoCode = require('../../vuepress-plugin/demo-code/index.js')
 
 module.exports = {
   title: "jeffery's blog",
@@ -10,6 +11,10 @@ module.exports = {
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
     ['meta', { name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
   ],
   markdown: {
     lineNumbers: true // 代码行号
@@ -130,15 +135,45 @@ module.exports = {
       duration: 1000, // prompt message display time.
       showInMobile: false // whether to display on the mobile side, default: false.
     }],
-    ['demo-block', { // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
-      settings: {
-        // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-        // cssLib: ['http://xxx'], // 在线示例中的css依赖
-        // vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
-        jsfiddle: false, // 是否显示 jsfiddle 链接
-        codepen: true, // 是否显示 codepen 链接
-        horizontal: false // 是否展示为横向样式
-      }
+    // ['demo-block', { // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
+    //   settings: {
+    //     // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
+    //     // cssLib: ['http://xxx'], // 在线示例中的css依赖
+    //     // vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
+    //     jsfiddle: true, // 是否显示 jsfiddle 链接
+    //     codepen: true, // 是否显示 codepen 链接
+    //     horizontal: false // 是否展示为横向样式
+    //   }
+    // }],
+    [demoCode, { // demo地址 https://github.com/BuptStEve/vuepress-plugin-demo-code
+      jsLibs: [
+          // umd
+          'https://unpkg.com/tua-storage/dist/TuaStorage.umd.js',
+      ],
+      cssLibs: [
+          'https://unpkg.com/animate.css@3.7.0/animate.min.css',
+      ],
+      showText: 'show code',
+      hideText: 'hide',
+      styleStr: 'text-decoration: underline;',
+      minHeight: 200,
+      onlineBtns: {
+          codepen: true,
+          jsfiddle: true,
+          codesandbox: true,
+      },
+      // jsfiddle: {
+      //     // framework: 'library/pure', // default
+      //     framework: 'vue/2.6.11',
+      // },
+      // codesandbox: {
+      //     deps: { 'lodash': 'latest' },
+      //     json: '',
+      //     query: '',
+      //     embed: '',
+      // },
+      // demoCodeMark: 'demo-code',
+      // copyOptions: { ... },
     }],
     [
       'vuepress-plugin-zooming', // 放大图片

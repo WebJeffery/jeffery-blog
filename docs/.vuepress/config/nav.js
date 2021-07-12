@@ -10,7 +10,7 @@ module.exports = [
         text: 'HTML', link: '/pages/8309a5b876fc95e3/'
       },
       {
-        text: 'CSS', link: '/pages/0a83b083bdf257cb/'
+        text: 'CSS', link: '/pages/s23wes376fc95e3/'
       },
     ]
   },
