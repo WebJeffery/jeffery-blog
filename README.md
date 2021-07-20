@@ -7,6 +7,12 @@
 
 ## 代码块
 
+**vuepress-plugin-demo-container**
+
+- [Demo Container](https://docs.chenjianhui.site/vuepress-plugin-demo-container/zh/)
+- [github](https://github.com/calebman/vuepress-plugin-demo-container)
+
+
 **vuepress-plugin-demo-code**
 
 - [文档](https://buptsteve.github.io/vuepress-plugin-demo-code/zh/)

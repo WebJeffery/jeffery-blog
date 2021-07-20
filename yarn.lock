@@ -2028,11 +2028,6 @@ binary-extensions@^2.0.0:
   resolved "https://registry.npm.taobao.org/binary-extensions/download/binary-extensions-2.2.0.tgz?cache=0&sync_timestamp=1610299308660&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbinary-extensions%2Fdownload%2Fbinary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=
 
-binaryextensions@^2.1.2:
-  version "2.3.0"
-  resolved "https://registry.npm.taobao.org/binaryextensions/download/binaryextensions-2.3.0.tgz#1d269cbf7e6243ea886aa41453c3651ccbe13c22"
-  integrity sha1-HSacv35iQ+qIaqQUU8NlHMvhPCI=
-
 bindings@^1.5.0:
   version "1.5.0"
   resolved "https://registry.nlark.com/bindings/download/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
@@ -2673,20 +2668,6 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/code-point-at/download/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
-
-codesandbox-import-util-types@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.nlark.com/codesandbox-import-util-types/download/codesandbox-import-util-types-2.2.3.tgz#b354b2f732ad130e119ebd9ead3bda3be5981a54"
-  integrity sha1-s1Sy9zKtEw4Rnr2erTvaO+WYGlQ=
-
-codesandbox-import-utils@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.nlark.com/codesandbox-import-utils/download/codesandbox-import-utils-2.2.3.tgz?cache=0&sync_timestamp=1619601467672&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcodesandbox-import-utils%2Fdownload%2Fcodesandbox-import-utils-2.2.3.tgz#f7b4801245b381cb8c90fe245e336624e19b6c84"
-  integrity sha1-97SAEkWzgcuMkP4kXjNmJOGbbIQ=
-  dependencies:
-    codesandbox-import-util-types "^2.2.3"
-    istextorbinary "^2.2.1"
-    lz-string "^1.4.4"
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -3637,14 +3618,6 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-editions@^2.2.0:
-  version "2.3.1"
-  resolved "https://registry.nlark.com/editions/download/editions-2.3.1.tgz#3bc9962f1978e801312fbd0aebfed63b49bfe698"
-  integrity sha1-O8mWLxl46AExL70K6/7WO0m/5pg=
-  dependencies:
-    errlop "^2.0.0"
-    semver "^6.3.0"
-
 editor@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/editor/download/editor-1.0.0.tgz#60c7f87bd62bcc6a894fa8ccd6afb7823a24f742"
@@ -3763,11 +3736,6 @@ err-code@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/err-code/download/err-code-1.1.2.tgz?cache=0&sync_timestamp=1612541423045&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ferr-code%2Fdownload%2Ferr-code-1.1.2.tgz#06e0116d3028f6aef4806849eb0ea6a748ae6960"
   integrity sha1-BuARbTAo9q70gGhJ6w6mp0iuaWA=
-
-errlop@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.nlark.com/errlop/download/errlop-2.2.0.tgz#1ff383f8f917ae328bebb802d6ca69666a42d21b"
-  integrity sha1-H/OD+PkXrjKL67gC1sppZmpC0hs=
 
 errno@^0.1.3, errno@~0.1.7:
   version "0.1.8"
@@ -5598,15 +5566,6 @@ isstream@~0.1.2:
   resolved "https://registry.npm.taobao.org/isstream/download/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-istextorbinary@^2.2.1:
-  version "2.6.0"
-  resolved "https://registry.npm.taobao.org/istextorbinary/download/istextorbinary-2.6.0.tgz#60776315fb0fa3999add276c02c69557b9ca28ab"
-  integrity sha1-YHdjFfsPo5ma3SdsAsaVV7nKKKs=
-  dependencies:
-    binaryextensions "^2.1.2"
-    editions "^2.2.0"
-    textextensions "^2.5.0"
-
 javascript-state-machine@^2.3.5:
   version "2.4.0"
   resolved "https://registry.npm.taobao.org/javascript-state-machine/download/javascript-state-machine-2.4.0.tgz#d8be31ec38f24ac1a1832f0b672fc3cd5f79c96e"
@@ -6199,11 +6158,6 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lz-string@^1.4.4:
-  version "1.4.4"
-  resolved "https://registry.npm.taobao.org/lz-string/download/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
-  integrity sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=
-
 make-dir@^1.0.0:
   version "1.3.0"
   resolved "https://registry.nlark.com/make-dir/download/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
@@ -6271,11 +6225,6 @@ markdown-it-container@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/markdown-it-container/download/markdown-it-container-2.0.0.tgz#0019b43fd02eefece2f1960a2895fba81a404695"
   integrity sha1-ABm0P9Au7+zi8ZYKKJX7qBpARpU=
-
-markdown-it-container@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/markdown-it-container/download/markdown-it-container-3.0.0.tgz#1d19b06040a020f9a827577bb7dbf67aa5de9a5b"
-  integrity sha1-HRmwYECgIPmoJ1d7t9v2eqXemls=
 
 markdown-it-emoji@^1.4.0:
   version "1.4.0"
@@ -7959,7 +7908,7 @@ pretty-time@^1.1.0:
   resolved "https://registry.nlark.com/pretty-time/download/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha1-/7dCmvq7hTXDRqNOQYc63z103Q4=
 
-prismjs@^1.13.0, prismjs@^1.23.0:
+prismjs@^1.13.0:
   version "1.24.1"
   resolved "https://registry.nlark.com/prismjs/download/prismjs-1.24.1.tgz?cache=0&sync_timestamp=1625312963163&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fprismjs%2Fdownload%2Fprismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
   integrity sha1-xNeJXE1lACiUgvqJNtnN0ZJoQDY=
@@ -9518,11 +9467,6 @@ text-table@^0.2.0, text-table@~0.2.0:
   resolved "https://registry.npm.taobao.org/text-table/download/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-textextensions@^2.5.0:
-  version "2.6.0"
-  resolved "https://registry.npm.taobao.org/textextensions/download/textextensions-2.6.0.tgz#d7e4ab13fe54e32e08873be40d51b74229b00fc4"
-  integrity sha1-1+SrE/5U4y4IhzvkDVG3QimwD8Q=
-
 through2@^2.0.0:
   version "2.0.5"
   resolved "https://registry.npm.taobao.org/through2/download/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
@@ -10134,11 +10078,6 @@ vuepress-plugin-baidu-tongji@^1.0.1:
   resolved "https://registry.nlark.com/vuepress-plugin-baidu-tongji/download/vuepress-plugin-baidu-tongji-1.0.1.tgz#2cdc502aad5f08b8134cdb1621adb32f4e398438"
   integrity sha1-LNxQKq1fCLgTTNsWIa2zL045hDg=
 
-vuepress-plugin-code-copy@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-code-copy/download/vuepress-plugin-code-copy-1.0.6.tgz#6431dab764b48b5b203e4936d98b1943651ce4ad"
-  integrity sha1-ZDHat2S0i1sgPkk22YsZQ2Uc5K0=
-
 vuepress-plugin-comment@^0.7.3:
   version "0.7.3"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-comment/download/vuepress-plugin-comment-0.7.3.tgz#2cff36b8f90896a7f88d494d78458398b1510249"
@@ -10159,20 +10098,10 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-demo-block@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-demo-block/download/vuepress-plugin-demo-block-0.7.2.tgz#02fc4f0ef764052981accf41f1403fdb9f794c0d"
-  integrity sha1-AvxPDvdkBSmBrM9B8UA/2595TA0=
-
-vuepress-plugin-demo-code@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.nlark.com/vuepress-plugin-demo-code/download/vuepress-plugin-demo-code-0.6.0.tgz#71bd228eab09a12d8cbb99416658572cb7510a8d"
-  integrity sha1-cb0ijqsJoS2Mu5lBZlhXLLdRCo0=
-  dependencies:
-    codesandbox-import-utils "^2.2.3"
-    markdown-it-container "^3.0.0"
-    prismjs "^1.23.0"
-    vuepress-plugin-code-copy "^1.0.6"
+vuepress-plugin-demo-container@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.nlark.com/vuepress-plugin-demo-container/download/vuepress-plugin-demo-container-0.2.0.tgz#5d92161b1c033b91f3cabddd994d5beed47ab6a6"
+  integrity sha1-XZIWGxwDO5Hzyr3dmU1b7tR6tqY=
 
 vuepress-plugin-one-click-copy@^1.0.2:
   version "1.0.5"
