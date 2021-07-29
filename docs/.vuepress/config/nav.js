@@ -24,11 +24,11 @@ module.exports = [
       },
       {
         text: 'JavaScript 进阶',
-        link: '/pages/adewebd/',
+        link: '/pages/sdedsee57cb/',
       },
       {
         text: 'JavaScript 高级', 
-        link: '/pages/weweadse/',
+        link: '/pages/sse3bdf257cb/',
       },
       {
         text: 'JavaScript 手写实践', 
