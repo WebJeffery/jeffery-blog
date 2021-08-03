@@ -3,8 +3,8 @@ module.exports = [
     text: '首页', link: '/'
   },
   {
-    text: 'HTML&CSS', 
-    link: '/ui/',
+    text: '前端基础', 
+    link: '/web/base/',
     items: [
       {
         text: 'HTML', link: '/pages/8309a5b876fc95e3/'
@@ -15,71 +15,79 @@ module.exports = [
     ]
   },
   {
-    text: 'JavaScript',
+    text: 'JavaScript体系',
     link: '/web/javascript/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
-        text: 'JavaScript 基础', 
+        text: 'JS 基础', 
         link: '/pages/23a3errwdasweew/',
       },
       {
-        text: 'JavaScript 进阶',
+        text: 'JS 进阶',
         link: '/pages/sdedsee57cb/',
       },
       {
-        text: 'JavaScript 高级', 
+        text: 'JS 造轮子', 
+        link: '/pages/8143cc480faf9a11/',
+      },
+      {
+        text: 'JS V8引擎', 
         link: '/pages/sse3bdf257cb/',
       },
       {
-        text: 'JavaScript 手写实践', 
-        link: '/pages/wewefss/',
+        text: 'JS 设计模式', 
+        link: '/pages/faee3dddwsee/',
       },
-      {
-        text: 'JavaScript 设计模式', 
-        link: '/pages/faee3see/',
-      }
     ]
   },
   {
-    text: '前端框架',
-    link: '/frame/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    text: 'Vue系列',
+    link: '/frame/vue',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
-        text: 'Vue 系列', 
-        items:[
-          {text: '组件化', link: '/pages/802a1ca6f7b71c59/'},
-          {text: 'Vue 性能优化', link: '/note/vue/'},
-          {text: 'Vue 实践', link: '/note/vue1/'},
-          {text: 'Vue 源码', link: '/note/vue2/'}
-        ]
-      }
+        text: 'Vue 笔记', 
+        link: '/pages/114158caa9e96df0/'
+      },
+      {
+        text: 'Vue 编程实践', 
+        link: '/pages/swwes57cb/'
+      },
+      {
+        text: 'Vue 文章', 
+        link: '/pages/802a1ca6f7b71c59/'
+      },
+      {
+        text: 'Vue 源码', 
+        link: '/pages/sddasse1031ef7/'
+      },
     ]
   },
 
   {
     text: '前端进阶',
-    link: '/advanced/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    link: '/web/advanced/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
-        text: 'TypeScript', 
+        text: '浏览器工作原理',
+        line: '/pages/sdda10seee31ef7/',
+      },
+      {
+        text: '性能优化',
+        link: '/pages/sdda103s1ewewf7/',
+      }
+    ]
+  },
+
+  {
+    text: '专栏学习笔记',
+    // link: '/web/note/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      {
+        text: 'TypeScript从零实现axios', 
         items: [
           {text: 'TypeScript 笔记', link: '/note/typescript-axios/'}
         ]
       },
-      {
-        text: '浏览器系列', 
-        items: [
-          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
-          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
-        ]
-      },
-      {
-        text: '性能优化系列', 
-        items: [
-          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
-          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
-        ]
-      }
     ]
   },
 
@@ -90,7 +98,7 @@ module.exports = [
       {
         text: '前端工程系列', 
         items:[
-          {text: '《JavaScript教程》笔记', link: '/note/javascript/'}
+          {text: '前端工程', link: '/pages/ysedewdwew/'}
         ]
       }
     ]
@@ -102,52 +110,68 @@ module.exports = [
     items: [
       {
         text: '数据结构和算法', 
-        items: [
-          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
-          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
-        ]
+        link: '/pages/selleaddds/'
       },
       {
         text: '计算机网络', 
-        items: [
-          {text: 'JavaScript', link: '/pages/8143cc480faf9a11/'}, // 注意link结尾有斜杠和没有斜杠的区别
-          {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
-        ]
+        link: '/pages/sellseeeaddds/'
       },
-      {
-        text: '编译原理', 
-        items:[
-          {text: '《JavaScript教程》笔记', link: '/note/javascript/'}
-        ]
-      }
+      // {
+      //   text: '编译原理', 
+      //   items:[
+      //     {text: '《JavaScript教程》笔记', link: '/note/javascript/'}
+      //   ]
+      // }
     ]
   },
 
   {
-    text: '项目',
-    link: '/project/',
+    text: '前端工具',
+    link: '/web/tool/',
     items: [
-      {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
-      {text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'},
-      {text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'},
-      {text: '博客搭建', link: '/pages/41f87d890d0a02af/'},
+      {
+        text: '技术文档', link: '/pages/9a7ee40fc232253e/'
+      },
+      {
+        text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'
+      },
+      {
+        text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'
+      },
+      {
+        text: '博客搭建', link: '/pages/41f87d890d0a02af/'
+      },
     ]
   },
   {
     text: '面试',
     link: '/interview/',
     items: [
-      {text: '面试题库', items: [
-        {text: 'HTML', link: '/pages/58734d/'},
-        {text: 'CSS', link: '/pages/26864d/'},
-        {text: 'jQuery', link: '/pages/ceea45/'},
-        {text: 'Vue', link: '/pages/4547e6/'},
-        {text: '零碎', link: '/pages/a134b2/'}
+      {
+        text: '面试题库', items: [
+        {
+          text: 'HTML', link: '/pages/58734d/'
+        },
+        {
+          text: 'CSS', link: '/pages/26864d/'
+        },
+        // {text: 'jQuery', link: '/pages/ceea45/'},
+        {
+          text: 'Vue', link: '/pages/4547e6/'
+        },
+        {
+          text: '零碎', link: '/pages/a134b2/'
+        }
       ]}
       ,
-      {text: '面试心得', items: [
-        {text: '杂言碎语', link: '/pages/331dbf/'},
-      ]}
+      {
+        text: '面试心得', 
+        items: [
+          {
+            text: '杂言碎语', link: '/pages/331dbf/'
+          },
+        ]
+      }
     ]
   },
   // {
