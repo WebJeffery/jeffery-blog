@@ -88,9 +88,7 @@ module.exports = [
     items: [
       {
         text: 'TypeScript从零实现axios', 
-        items: [
-          {text: 'TypeScript 笔记', link: '/note/typescript-axios/'}
-        ]
+        link: '/note/typescript-axios/'
       },
     ]
   },
@@ -100,10 +98,8 @@ module.exports = [
     link: '/engineer/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
-        text: '前端工程系列', 
-        items:[
-          {text: '前端工程', link: '/pages/ysedewdwew/'}
-        ]
+        text: '前端工程系列',
+        link: '/pages/ysedewdwew/'
       }
     ]
   },
@@ -198,8 +194,9 @@ module.exports = [
   // },
   {
     text: '更多', 
-    link: '/more/',
+    // link: '/more/',
     items: [
+      {text: '插件使用', link: '/pages/sseaeewweeew/'},
       {text: '学习', link: '/pages/f2a556/'},
       {text: '面试', link: '/pages/aea6571b7a8bae86/'},
       {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
