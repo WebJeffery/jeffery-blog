@@ -27,6 +27,10 @@ module.exports = [
         link: '/pages/sdedsee57cb/',
       },
       {
+        text: 'JS 实践',
+        link: '/pages/ssll3bdf257cb/',
+      },
+      {
         text: 'JS 造轮子', 
         link: '/pages/8143cc480faf9a11/',
       },
