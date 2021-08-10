@@ -40,7 +40,7 @@ module.exports = [
       },
       {
         text: 'JS 设计模式', 
-        link: '/pages/faee3dddwsee/',
+        link: '/pages/ssseee57seecb/',
       },
     ]
   },
@@ -54,7 +54,7 @@ module.exports = [
       },
       {
         text: 'Vue 编程实践', 
-        link: '/pages/swwes57cb/'
+        link: '/pages/swwedeeds57cb/'
       },
       {
         text: 'Vue 文章', 
@@ -73,7 +73,7 @@ module.exports = [
     items: [
       {
         text: '浏览器工作原理',
-        line: '/pages/sdda10seee31ef7/',
+        line: '/pages/sdda10seewe31ef7/',
       },
       {
         text: '性能优化',
@@ -124,103 +124,52 @@ module.exports = [
       // }
     ]
   },
-
-  {
-    text: '前端工具',
-    link: '/web/tool/',
+  { 
+    text: '文档教程', 
+    link: '',
+    icon: '',
     items: [
-      {
-        text: '技术文档', link: '/pages/9a7ee40fc232253e/'
-      },
-      {
-        text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'
-      },
-      {
-        text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'
-      },
-      {
-        text: '博客搭建', link: '/pages/41f87d890d0a02af/'
-      },
+      { text: '资源导航', link: '/web/docs/nav/', icon: 'reco-blog' },
+      { text: '慕课教程', link: '/web/docs/imooc/wiki/', icon: 'reco-blog' },
+      { text: 'ES6 入门教程', link: '/web/docs/es6/', icon: 'reco-blog' },
+      { text: '网道-JavaScript 教程', link: '/web/docs/wangdoc/javascript/', icon: 'reco-blog' },
+      // { text: 'Angular 文档', link: '/web/docs/angular/', icon: 'reco-blog' },
+      { text: 'React 文档', link: '/web/docs/react/', icon: 'reco-blog' },
+      { text: 'Vue 文档', link: '/web/docs/vue/', icon: 'reco-blog' },
+      { text: 'Node 文档', link: '/web/docs/node/', icon: 'reco-blog' },
+      { text: 'Babel 文档', link: '/web/docs/babel/', icon: 'reco-blog' },
+      { text: 'Webpack 文档', link: '/web/docs/webpack/', icon: 'reco-blog' },
+      { text: 'TypeScript 文档', link: '/web/docs/typescript/', icon: 'reco-blog' },
+      { text: '菜鸟教程', link: '/web/docs/runoob/', icon: 'reco-blog' },
+      { text: '印记中文', link: '/web/docs/docschina/', icon: 'reco-blog' },
     ]
   },
-  {
-    text: '面试',
-    link: '/interview/',
-    items: [
-      {
-        text: '面试题库', items: [
-        {
-          text: 'HTML', link: '/pages/58734d/'
-        },
-        {
-          text: 'CSS', link: '/pages/26864d/'
-        },
-        // {text: 'jQuery', link: '/pages/ceea45/'},
-        {
-          text: 'Vue', link: '/pages/4547e6/'
-        },
-        {
-          text: '零碎', link: '/pages/a134b2/'
-        }
-      ]}
-      ,
-      {
-        text: '面试心得', 
-        items: [
-          {
-            text: '杂言碎语', link: '/pages/331dbf/'
-          },
-        ]
-      }
-    ]
-  },
-  // {
-  //   text: '读书派', 
-  //   link: '/bookssent/',
-  //   items: [
-  //     {text: '摘抄收录', items: [
-  //       {text: '☆ 励志鸡汤', link: '/ChickenSoup/'},
-  //       {text: '❀ 人间烟火', link: '/PassionLife/'},
-  //       {text: '☣ 万物沦丧', link: '/ThingsLost/'},
-  //       {text: '✌ 关掉烦恼', link: '/NoTrouble/'},
-  //       {text: '✲ 小酒馆', link: '/Bistro/'}
-  //     ]}, //link: '/pages/wordsof/'}
-  //     {text: '读书笔记', items: [
-  //       {text: '《小狗钱钱》', link: '/note/xgqq/'},
-  //       {text: '《穷爸爸富爸爸》', link: '/note/qbbfbb/'},
-  //       {text: '《聪明人使用方格笔记本》', link: '/note/cmrsyfgbjb/'}
-  //     ]}
-  //   ]
-  // },
   {
     text: '更多', 
     // link: '/more/',
     items: [
       {text: '插件使用', link: '/pages/sseaeewweeew/'},
       {text: '学习', link: '/pages/f2a556/'},
-      {text: '面试', link: '/pages/aea6571b7a8bae86/'},
-      {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
-      {text: '友情链接', link: '/friends/'},
+      {text: '低代码', link: '/pages/sdseee31ef7/'},
+      {text: '关于我', link: '/about/'},
+      {
+        text: '收藏',
+        link: '/pages/beb6c0bd8a66cea6/',
+        items: [
+          {text: '资源工具', link: '/pages/44207a5def0a8a/'},
+          // {text: '资源工具', link: '/pages/44207a5def0a8a/'},
+          {text: '其他', link: '/pages/05c534dbae294/'},
+        ]
+      },
+      {
+        text: '索引',
+        link: '/archives/',
+        items: [
+          {text: '分类', link: '/categories/'},
+          {text: '标签', link: '/tags/'},
+          {text: '归档', link: '/archives/'},
+        ]
+      },
     ]
   },
-  {text: '关于', link: '/about/'},
-  {
-    text: '收藏',
-    link: '/pages/beb6c0bd8a66cea6/',
-    items: [
-      {text: '学习资源', link: '/pages/eee83a9211a70f9d/'},
-      // {text: '工具', link: '/pages/beb6cwe0bd8a66cea6/'},
-      {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
-      {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
-    ]
-  },
-  {
-    text: '索引',
-    link: '/archives/',
-    items: [
-      {text: '分类', link: '/categories/'},
-      {text: '标签', link: '/tags/'},
-      {text: '归档', link: '/archives/'},
-    ]
-  }
 ]

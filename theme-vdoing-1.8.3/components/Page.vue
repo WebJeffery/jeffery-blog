@@ -127,6 +127,14 @@ export default {
 .theme-vdoing-wrapper
   .content-wrapper
     position relative
+  .global-fixed-wrapper
+    position fixed
+    top $navbarHeight
+    left 0
+    width 100%
+    height calc(100vh - 3.6rem)
+    z-index 100
+    background-color #fff
   h1 img
     margin-bottom -0.2rem
     max-width 2.2rem
