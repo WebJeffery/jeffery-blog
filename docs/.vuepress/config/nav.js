@@ -110,7 +110,7 @@ module.exports = [
     items: [
       {
         text: '数据结构和算法', 
-        link: '/pages/selleaddds/'
+        link: '/pages/ssseseddds/'
       },
       {
         text: '计算机网络', 
@@ -146,18 +146,16 @@ module.exports = [
   },
   {
     text: '更多', 
-    // link: '/more/',
     items: [
       {text: '插件使用', link: '/pages/sseaeewweeew/'},
       {text: '学习', link: '/pages/f2a556/'},
       {text: '低代码', link: '/pages/sdseee31ef7/'},
       {text: '关于我', link: '/about/'},
+      {text: '总结', link: '/pages/f2weweweea556/'},
       {
         text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
         items: [
           {text: '资源工具', link: '/pages/44207a5def0a8a/'},
-          // {text: '资源工具', link: '/pages/44207a5def0a8a/'},
           {text: '其他', link: '/pages/05c534dbae294/'},
         ]
       },
