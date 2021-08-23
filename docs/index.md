@@ -48,9 +48,9 @@ features: # 可选的
 博客部分特色功能介绍
 
 #### 一站式技术搜索
-   
+
    博客内容中包含部分技术教程，可以利用搜索框快速搜索到相关文档，即使博客中没有的，你还可以选择最下方的 `在XXX中搜索“xxx”` 快速到达你想要找的内容。
-   
+
 #### 深色模式与阅读模式
 关爱程序员，保护视力，点击右下角的主题模式按钮试试吧~
 
@@ -73,15 +73,4 @@ features: # 可选的
 </style>
 ```
 :::
-
-
-## :email: 联系
-
-- **WeChat or QQ**: <a href="tencent://message/?uin=894072666&Site=&Menu=yesUrl" class='qq'>894072666</a>
-- **Email**: <a href="mailto:894072666@qq.com">894072666@qq.com</a>
-- **GitHub**: <https://github.com/JefferyXZF>
- 
-</br>  -->
-
-
 

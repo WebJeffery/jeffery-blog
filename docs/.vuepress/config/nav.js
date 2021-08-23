@@ -145,18 +145,34 @@ module.exports = [
     ]
   },
   {
+    text: '收藏夹', 
+    items: [
+      {
+        text: '学习资源', link: '/pages/eee83a9211a70f9d/'
+      },
+      {
+        text: '优质资源', link: '/pages/12seeemms493f6/'
+      },
+      {
+        text: '资源工具', link: '/pages/44207a5def0a8a/'
+      },
+      {
+        text: '其他', link: '/pages/05c534dbae294/'
+      },
+
+    ]
+  },
+  {
     text: '更多', 
     items: [
-      {text: '插件使用', link: '/pages/sseaeewweeew/'},
-      {text: '学习', link: '/pages/f2a556/'},
-      {text: '低代码', link: '/pages/sdseee31ef7/'},
-      {text: '关于我', link: '/about/'},
-      {text: '总结', link: '/pages/f2weweweea556/'},
       {
-        text: '收藏',
+        text: '文章',
         items: [
-          {text: '资源工具', link: '/pages/44207a5def0a8a/'},
-          {text: '其他', link: '/pages/05c534dbae294/'},
+          {text: '插件使用', link: '/pages/sseaeewweeew/'},
+          {text: '学习', link: '/pages/f2a556/'},
+          {text: '低代码', link: '/pages/sdseee31ef7/'},
+          {text: '关于我', link: '/about/'},
+          {text: '总结', link: '/pages/f2weweweea556/'},
         ]
       },
       {
