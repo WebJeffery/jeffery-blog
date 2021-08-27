@@ -157,7 +157,7 @@ module.exports = [
         text: '资源工具', link: '/pages/44207a5def0a8a/'
       },
       {
-        text: '其他', link: '/pages/05c534dbae294/'
+        text: '其他', link: '/pages/0wewew4dbae294/'
       },
 
     ]
