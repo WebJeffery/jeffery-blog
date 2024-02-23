@@ -1,12 +1,18 @@
-# npm
-package-lock.json
+.DS_Store
 node_modules
+dist
+.temp
+cache
 
-# vscode
-.vscode
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# vuepress 
-docs/.vuepress/dist
-
-# 百度链接推送
-urls.txt
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

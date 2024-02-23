@@ -1,76 +1,69 @@
 ---
-home: true
-# heroImage: /img/web.png
-heroText: jeffery
-tagline: 想都是问题，做才是答案
-actionText: 开始学习 →
-actionLink: /web/javascript/
-bannerBg: custom #custom自定义 # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+layout: home
+layoutClass: 'm-home-layout'
 
-features: # 可选的
-  - title: 前端基础
-    details: HTML、CSS
-    link: /web/base # 可选
-    imgUrl: /img/1.png # 可选
-  - title: javascript 知识体系
-    details: ES5、ES6+、js造轮子、js引擎(V8)
-    link: /web/javascript
-    imgUrl: /img/2.png
-  - title: 进阶
-    details: 源码、性能优化、浏览器……
-    link: web/advanced/
-    imgUrl: /img/3.png
-
-# 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
-# postList: detailed
+hero:
+  name: jeffery-blog
+  text: 前端成长之路
+  tagline: 知识是进步的阶梯，争取每天都有知识点更新
+  image:
+    src: /logo.jpg
+    alt: jeffery-blog
+  actions:
+    - text: 前端物语
+      link: /fe/es6/
+    - text: 前端导航
+      link: /nav
+      theme: alt
+    - text: mmPlayer
+      link: https://netease-music.fe-mm.com
+      theme: alt
+features:
+  - icon: 📖
+    title: 前端物语
+    details: 整理前端常用知识点<small>（面试八股文）</small><br />如有异议按你的理解为主，不接受反驳
+    link: /fe/javascript/types
+    linkText: 前端常用知识
+  - icon: 📘
+    title: 源码阅读
+    details: 了解各种库的实现原理<br />学习其中的小技巧和冷知识
+    link: /analysis/utils/only-allow
+    linkText: 源码阅读
+  - icon: 💡
+    title: Workflow
+    details: 在工作中学到的一切<small>（常用库/工具/奇淫技巧等）</small><br />配合 CV 大法来更好的摸鱼
+    link: /workflow/utils/library
+    linkText: 常用工具库
+  - icon: 🧰
+    title: 提效工具
+    details: 工欲善其事，必先利其器<br />记录开发和日常使用中所用到的软件、插件、扩展等
+    link: /efficiency/online-tools
+    linkText: 提效工具
+  - icon: 🐞
+    title: 踩坑记录
+    details: 那些年我们踩过的坑<br />总有一些让你意想不到的问题
+    link: /pit/npm
+    linkText: 踩坑记录
+  - icon: 💯
+    title: 吾志所向，一往无前。
+    details: '<small class="bottom-small">一个想躺平的小开发</small>'
+    link: /mao
 ---
 
-
-<!-- 小熊猫 -->
-<!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
-
-<!-- 
-## 关于
-
-### 📚Blog
-这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。如果你喜欢这个博客&主题欢迎到[GitHub](https://github.com/JefferyXZF/vuepress-theme-vdoing)点个Star、获取源码，或者交换[友链](/friends/) ( •̀ ω •́ )✧
-
-### 🎨Theme
-本站主题是根据[VuePress](https://vuepress.vuejs.org/zh/)的默认主题修改而成。取名`Vdoing`(维度)，旨在轻松打造一个`结构化`与`碎片化`并存的个人在线知识库&博客，让你的知识海洋像一本本书一样清晰易读。配合多维索引，让每一个知识点都可以快速定位！ 更多[详情](https://github.com/JefferyXZF/vuepress-theme-vdoing)。
-
-<a href="https://github.com/JefferyXZF/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/stars/xugaoyi/vuepress-theme-vdoing' alt='GitHub stars' class="no-zoom"></a>
-<a href="https://github.com/JefferyXZF/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/forks/xugaoyi/vuepress-theme-vdoing' alt='GitHub forks' class="no-zoom"></a>
-
-</br>
-
-
-## 特色功能
-博客部分特色功能介绍
-
-#### 一站式技术搜索
-
-   博客内容中包含部分技术教程，可以利用搜索框快速搜索到相关文档，即使博客中没有的，你还可以选择最下方的 `在XXX中搜索“xxx”` 快速到达你想要找的内容。
-
-#### 深色模式与阅读模式
-关爱程序员，保护视力，点击右下角的主题模式按钮试试吧~
-
-#### Demo演示模块
-   为了更直观的展示一些代码的效果，博客添加了demo模块插件，可查看demo、源码，以及跳转到codepen在线编辑。**示例**：
-
-::: demo [vanilla]
-```html
-<html>
-  <div id="vanilla-box"></div>
-</html>
-<script>
-  var box = document.getElementById('vanilla-box')
-  box.innerHTML = 'Hello World! Welcome to EB'
-</script>
 <style>
-#vanilla-box {
-  color: #11a8cd;
+/*爱的魔力转圈圈*/
+.m-home-layout .image-src:hover {
+  transform: translate(-50%, -50%) rotate(666turn);
+  transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
+}
+
+.m-home-layout .details small {
+  opacity: 0.8;
+}
+
+.m-home-layout .item:last-child .details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 </style>
-```
-:::
-
