@@ -22,6 +22,11 @@ export const nav: DefaultTheme.Config['nav'] = [
     activeMatch: '^/analysis'
   },
   {
+    text: '富文本编辑器',
+    link: '/editor/tiptap/guide',
+    activeMatch: '^/editor'
+  },
+  {
     text: 'Workflow',
     items: [
       {
