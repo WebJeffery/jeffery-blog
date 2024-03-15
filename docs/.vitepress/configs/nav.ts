@@ -3,7 +3,7 @@ import type { DefaultTheme } from 'vitepress'
 export const nav: DefaultTheme.Config['nav'] = [
   { text: '导航', link: '/nav', activeMatch: '^/nav' },
   {
-    text: '前端物语',
+    text: '前端基础',
     items: [
       { text: 'JavaScript 基础知识', link: '/fe/javascript/types' },
       { text: 'ES6 常用知识', link: '/fe/es6/' },
@@ -12,7 +12,15 @@ export const nav: DefaultTheme.Config['nav'] = [
     ],
     activeMatch: '^/fe'
   },
-  { text: '源码阅读', link: '/analysis/utils/only-allow', activeMatch: '^/analysis' },
+  {
+    text: '源码阅读',
+    items: [
+      { text: 'Vue3源码阅读', link: '/analysis/vue3/base/monorepo' },
+      { text: '富文本编辑器', link: '/analysis/vue3/base/monorepo' },
+      { text: '工具库', link: '/analysis/utils/only-allow' }
+    ],
+    activeMatch: '^/analysis'
+  },
   {
     text: 'Workflow',
     items: [
