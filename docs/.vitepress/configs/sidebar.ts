@@ -51,13 +51,267 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/fe/coding/'
     }
   ],
-  '/analysis/': [
+  '/analysis/utils': [
     {
       text: '工具库',
       // collapsed: false,
       items: [
         { text: 'only-allow', link: '/analysis/utils/only-allow' },
         { text: 'clsx', link: '/analysis/utils/clsx' }
+      ]
+    }
+  ],
+  '/analysis/vue3': [
+    {
+      text: 'Vue3 源码阅读',
+      // collapsed: false,
+      items: [
+        {
+          text: '前置知识',
+          collapsed: true,
+          items: [
+            {
+              text: 'Vue3 源码学习指南',
+              link: '/analysis/vue3/base/guide'
+            },
+            {
+              text: 'pnpm 包管理工具',
+              link: '/analysis/vue3/base/pnpm'
+            },
+            {
+              text: 'monorepo 代码管理',
+              link: '/analysis/vue3/base/monorepo'
+            }
+            // {
+            //   text: 'package.json 解读',
+            //   link: '/analysis/vue3/base/package'
+            // },
+            // {
+            //   text: 'script 工作流',
+            //   link: '/analysis/vue3/base/script'
+            // },
+            // {
+            //   text: '构建工具',
+            //   link: '/analysis/vue3/base/build'
+            // },
+            // {
+            //   text: '测试工具',
+            //   link: '/analysis/vue3/base/test'
+            // },
+            // {
+            //   text: 'TypeScript',
+            //   link: '/analysis/vue3/base/typescript'
+            // }
+          ]
+        },
+        {
+          text: '全局概览',
+          collapsed: true,
+          items: [
+            {
+              text: 'Vue3 源码学习和调试',
+              link: '/analysis/vue3/global/debug'
+            },
+            {
+              text: 'Vue3 优化',
+              link: '/analysis/vue3/global/optimize'
+            },
+            {
+              text: 'Vue3 目录结构',
+              link: '/analysis/vue3/global/directory'
+            }
+            // {
+            //   text: 'createApp',
+            //   link: '/analysis/vue3/global/createApp'
+            // },
+            // {
+            //   text: 'mount',
+            //   link: '/analysis/vue3/global/mount'
+            // },
+            // {
+            //   text: 'API 分析',
+            //   link: '/analysis/vue3/global/api'
+            // }
+          ]
+        },
+        {
+          text: '响应式原理',
+          collapsed: true,
+          items: [
+            {
+              text: 'effect副作用函数',
+              link: '/analysis/vue3/reactive/effect'
+            },
+            {
+              text: 'reactive',
+              link: '/analysis/vue3/reactive/reactive'
+            },
+            {
+              text: 'ref',
+              link: '/analysis/vue3/reactive/ref'
+            },
+            {
+              text: 'computed',
+              link: '/analysis/vue3/reactive/computed'
+            },
+            {
+              text: 'watch',
+              link: '/analysis/vue3/reactive/watch'
+            },
+            {
+              text: '扩展工具方法',
+              link: '/analysis/vue3/reactive/api'
+            }
+          ]
+        },
+        {
+          text: '生命周期',
+          collapsed: true,
+          items: [
+            {
+              text: 'setup 函数',
+              link: '/analysis/vue3/lifecycle/setup'
+            },
+            {
+              text: '生命周期函数',
+              link: '/analysis/vue3/lifecycle/hooks'
+            }
+          ]
+        },
+        {
+          text: '事件',
+          collapsed: true,
+          items: [
+            {
+              text: 'DOM事件',
+              link: '/analysis/vue3/event/dom'
+            },
+            {
+              text: '组件自定义事件',
+              link: '/analysis/vue3/event/customer'
+            }
+          ]
+        },
+        {
+          text: '组件',
+          collapsed: true,
+          items: [
+            {
+              text: '组件注册',
+              link: '/analysis/vue3/component/register'
+            },
+            {
+              text: '组件渲染',
+              link: '/analysis/vue3/component/render'
+            },
+            {
+              text: '组件更新及diff',
+              link: '/analysis/vue3/component/update'
+            },
+            {
+              text: '组件props',
+              link: '/analysis/vue3/component/props'
+            },
+            {
+              text: '组件slot插槽',
+              link: '/analysis/vue3/component/slots'
+            }
+          ]
+        },
+        {
+          text: '内置组件',
+          collapsed: true,
+          items: [
+            {
+              text: 'keep-alive',
+              link: '/analysis/vue3/component/keep-alive'
+            },
+            {
+              text: 'suspense',
+              link: '/analysis/vue3/component/suspense'
+            },
+            {
+              text: 'frament',
+              link: '/analysis/vue3/component/frament'
+            },
+            {
+              text: 'teleport',
+              link: '/analysis/vue3/component/teleport'
+            }
+          ]
+        },
+        {
+          text: '模版编译',
+          collapsed: true,
+          items: [
+            {
+              text: '生成AST对象',
+              link: '/analysis/vue3/compiler/ast'
+            },
+            {
+              text: 'AST对象优化',
+              link: '/analysis/vue3/compiler/optimize'
+            },
+            {
+              text: '生成代码字符串',
+              link: '/analysis/vue3/compiler/generate'
+            },
+            {
+              text: '生成render函数',
+              link: '/analysis/vue3/compiler/render'
+            }
+          ]
+        },
+        {
+          text: 'directive指令',
+          collapsed: true,
+          items: [
+            {
+              text: '指令渲染',
+              link: '/analysis/vue3/directive/render'
+            },
+            {
+              text: '指令生命周期',
+              link: '/analysis/vue3/directive/lifecycle'
+            },
+            {
+              text: 'v-model',
+              link: '/analysis/vue3/directive/model'
+            },
+            {
+              text: '自定义指令',
+              link: '/analysis/vue3/directive/customer'
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  '/editor/': [
+    {
+      text: '富文本编辑器',
+      items: [
+        // {
+        //   text: 'tiptap 编辑器',
+        //   items: [{ text: '开发指南', link: '/editor/tiptap/guide' }]
+        // },
+        {
+          text: 'wangeditor 编辑器',
+          collapsed: false,
+          items: [
+            { text: 'wangeditor 源码阅读', link: '/editor/wangeditor/guide' },
+            { text: 'wangeditor 源码调试', link: '/editor/wangeditor/debug' }
+          ]
+        },
+        {
+          text: 'editor.js 编辑器',
+          collapsed: false,
+          items: [
+            { text: 'Editor.js 开发指南', link: '/editor/editorjs/guide' },
+            { text: 'Editor.js 封装组件', link: '/editor/editorjs/component' },
+            { text: 'Editor.js 段落插件源码解读', link: '/editor/editorjs/paragraph' }
+          ]
+        }
       ]
     }
   ],
