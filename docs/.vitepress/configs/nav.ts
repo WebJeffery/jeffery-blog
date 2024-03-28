@@ -16,15 +16,10 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '源码阅读',
     items: [
       { text: 'Vue3源码阅读', link: '/analysis/vue3/base/guide' },
-      { text: '富文本编辑器', link: '/analysis/vue3/base/monorepo' },
+      { text: '富文本编辑器', link: '/editor/editorjs/guide' },
       { text: '工具库', link: '/analysis/utils/only-allow' }
     ],
     activeMatch: '^/analysis'
-  },
-  {
-    text: '富文本编辑器',
-    link: '/editor/tiptap/guide',
-    activeMatch: '^/editor'
   },
   {
     text: 'Workflow',

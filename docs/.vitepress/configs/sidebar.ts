@@ -290,14 +290,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/editor/': [
     {
       text: '富文本编辑器',
-      collapsed: false,
       items: [
-        {
-          text: 'tiptap 编辑器',
-          items: [{ text: '开发指南', link: '/editor/tiptap/guide' }]
-        },
+        // {
+        //   text: 'tiptap 编辑器',
+        //   items: [{ text: '开发指南', link: '/editor/tiptap/guide' }]
+        // },
         {
           text: 'wangeditor 编辑器',
+          collapsed: false,
           items: [
             { text: 'wangeditor 源码阅读', link: '/editor/wangeditor/guide' },
             { text: 'wangeditor 源码调试', link: '/editor/wangeditor/debug' }
@@ -305,6 +305,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: 'editor.js 编辑器',
+          collapsed: false,
           items: [
             { text: 'Editor.js 开发指南', link: '/editor/editorjs/guide' },
             { text: 'Editor.js 封装组件', link: '/editor/editorjs/component' },
