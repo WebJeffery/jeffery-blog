@@ -13,7 +13,7 @@ wangEditor 使用 lerna 进行代码管理，底层依赖 `slate.js` 和 `snabbd
 1.  slate.js 库负责对文本、节点内容处理，如文本操作（字体加粗、下划线、删除线、颜色、背景等）、元素操作（插入段落、标题、列表、表格、图片等）
 2.  wangEditor 没有使用 `slate-react` 渲染 ，它与框架无关，可以使用在 Vue、React 项目，渲染使用 snabbdom，利用 patch diff 提升更新的性能
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4e2dd75d2b3c41189b3ed5e3131f569c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1606&h=664&s=96458&e=png&b=d5fefb)
+![](./image/guide1.png)
 
 wangEditor 代码拆分到 packages 子模块下，方便扩展和维护
 
@@ -22,7 +22,7 @@ wangEditor 代码拆分到 packages 子模块下，方便扩展和维护
 
 总的来说，`editor` 模块相当于出口，作为中间桥梁，将核心包 core 和其他功能模块的包很好的集成在一起，既方便代码管理，也能通过插件机制，很好的扩展其他功能模块。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f2d714f51d58431fbe6f19feb4534ed5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=591&h=423&s=36583&e=png&b=272728)
+![](./image/guide2.png)
 
 ## 开始使用
 
@@ -56,7 +56,7 @@ const toolbar = createToolbar({
 
 编辑器的页面渲染，是以数据驱动，数据存储到 `editor.children`
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/491884a25a9344dfa0d32e9558238136~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1077&h=662&s=28408&e=png&b=fefefe)
+![](./image/guide3.png)
 
 ## 富文本渲染流程
 
@@ -320,7 +320,7 @@ function getRenderElem(type: string): RenderElemFnType {
 }
 ```
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8d944f6e444466fb98e4654fd40fd3f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=299&h=277&s=15709&e=png&b=f9f7f7)
+![](./image/guide4.png)
 
 段落渲染函数
 
@@ -453,4 +453,4 @@ export function renderStyle(node: Descendant, vnode: VNode): VNode {
 
 ## 渲染的流程图
 
-![渲染流程图.jpg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/81f07e14c1564913a2e4602058689eda~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1488&h=1002&s=147207&e=jpg&b=b9e9eb)
+![渲染流程图.jpg](./image/guide5.png)

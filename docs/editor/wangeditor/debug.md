@@ -33,9 +33,9 @@ git clone https://github.com/wangeditor-team/wangEditor
 
 进入 `packages/editor` 目录，运行 `yarn example` ，浏览器打开 `http://localhost:8881/examples/`，看到下面的目录界面，我选择 simple-mode 路径，可以编辑查看修改后的数据结构
 
-| example 目录界面                                                                                                                                                      | simple-mode 页面                                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8152aec30f344f08bde28d7801f1869a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=661&h=761&s=57278&e=png&b=ffffff) | ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06fe81795ee4420b8cf678140c89306d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1106&h=712&s=26854&e=png&b=ffffff) |
+| example 目录界面        | simple-mode 页面        |
+| ----------------------- | ----------------------- |
+| ![](./image/debug1.png) | ![](./image/debug2.png) |
 
 ## 源码调试
 
@@ -45,23 +45,23 @@ git clone https://github.com/wangeditor-team/wangEditor
 
 文件路径 packages/editor/examples/simple-mode.html
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6516d33f16d44eff8aa1dcb97ffcf269~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1298&h=613&s=77431&e=png&b=afafaf)
+![](./image/debug3.png)
 
 那么如何调试进入 createEditor 方法呢，我常用的一个调试技巧是：
 
 **将鼠标悬浮在 createEditor 方法上，出现一个提示框，点击 FunctionLocation 文件路径，可以跳转到对应源码的文件位置**
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bb0d068913094f1e8c1f3f56ef988446~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=464&h=474&s=38526&e=png&b=fefbfb)
+![](./image/debug4.png)
 
 定位到 `createEditor` 方法位置，接着在 `coreCreateEditor` 方法打上断点，继续执行
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9894a48db3ad401195514777b6dd2300~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=580&h=271&s=28395&e=png&b=fffbfb)
+![](./image/debug5.png)
 
 同样根据上面的步骤，定位到 coreCreateEditor 源码位置，在方法执行前打上断点
 
 从下面可以看到 coreCreateEditor 方法是实例化富文本的执行函数，主要做的事情：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6279aa6eea814e7395a7d9094fab31ae~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1048&h=770&s=160068&e=png&b=fefcfc)
+![](./image/debug6.png)
 
 1、调用 slate.js `createEditor` 方法创建 editor 对象，wangEditor 基于它提供的插件机制，封装了多个插件，类似 koa 洋葱模型
 
@@ -97,13 +97,13 @@ export const withContent = (editor) => {
 
 `register-builtin-modules/index` 进行插件批量注册，遍历 `plugins` 数组，实际是根据插件形式实现 段落、标题、列表、表格等功能，往 edior 对象添加函数
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/83906d938e2e4f4ebc942c94a149d7cc~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=502&h=343&s=31076&e=png&b=fdfbfb)
+![](./image/debug7.png)
 
 3、htmlToContent 将传入的 html 转换为 editor.children，传入 content 的优先级高
 
 接着 normalizeContent 方法规范化 content 数据，如两个相连的 text 合并，减少重复节点
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/00328304c1a346cd9e030eb240b545f3~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=767&h=487&s=68843&e=png&b=fdf7f6)
+![](./image/debug8.png)
 
 4、最后实例化 TextArea ，调用 changeViewState 更新视图内容，渲染的步骤可以阅读[基于 slate.js 框架 wangEditor 富文本渲染及源码分析](https://juejin.cn/post/7324528599779835930#heading-3)这篇文章
 
@@ -114,7 +114,7 @@ export const withContent = (editor) => {
 1.  鼠标选中文本，触发 `selectionchange` 事件，将 DOM selection 同步给 `slate.section`，此时 slate.js 知道选中的文本起始点和终点的范围
 2.  点击工具栏加粗按钮，使用 slate.js API 加粗文本
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/94b854d8ac9e49cdb9445f6cb4d08690~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=430&h=166&s=6284&e=png&b=fefefe)
+![](./image/debug9.png)
 
 ### selectionchange 选区
 
@@ -124,7 +124,7 @@ export const withContent = (editor) => {
 
 `Transforms.select` 选中范围，此时 `editor.section` 保存了 range 最新的值
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9719377ba3474ff3b8f30c37f499f261~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=898&h=490&s=108127&e=png&b=fefafa)
+![](./image/debug10.png)
 
 editor.section 是 slate 的选区，包含 `anchor 起始点` 和 `focus 终点`，在 slate 用 Point 表示，它又由 Path 和 offset 组成
 
@@ -133,7 +133,7 @@ editor.section 是 slate 的选区，包含 `anchor 起始点` 和 `focus 终点
 - anchor: path 路径 \[0, 0] 表示第一行第一列，offst 偏移是 3，是在 `hello` 的 `l` 起点
 - focus： path 路径 \[1, 0] 表示第二行第一列，offset 偏移是 5，是在 `world` 的 `d` 终点
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cc03815f138f458199a39550438a169b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=939&h=451&s=31035&e=png&b=fefefe)
+![](./image/debug11.png)
 
 ### 加粗按钮
 
@@ -141,15 +141,15 @@ editor.section 是 slate 的选区，包含 `anchor 起始点` 和 `focus 终点
 
 执行 `editor.addMark` 添加 bold 标记
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bb9738c1e0f439baceb5b0fc378b241~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=670&h=328&s=30299&e=png&b=fef9f9)
+![](./image/debug12.png)
 
 addMark 加粗标记，内部会调用 `Transforms.setNodes` 设置节点，`split` 参数会根据 `match` 匹配函数进行切割文本
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/235b937a50fd42a29a28260747e25c99~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=611&h=243&s=20403&e=png&b=fff8f8)
+![](./image/debug13.png)
 
 不妨继续进入 `slate.js` 源码看下 Transforms.setNodes 函数的执行，它内部会在 focus 和 anchor 节点位置，分别调用 `Transforms.splitNodes` 方法进行切割文本
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9bdf58fd443943f5acd67bc9bf6f3d52~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=659&h=548&s=73557&e=png&b=fdf7f6)
+![](./image/debug14.png)
 
 最后通过调用 `editor.apply` 方法，在给 `[0, 1]` 节点设置了 bold 属性，添加标记过程就算完成了
 
@@ -162,7 +162,7 @@ editor.apply({
 })
 ```
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3b5572416f774a97a27c70b8c35c4393~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=676&h=390&s=44687&e=png&b=fdfbfb)
+![](./image/debug15.png)
 
 wangEditor 是以数据为驱动渲染页面，在更改 editor.children 数据后，会重新渲染
 
@@ -172,7 +172,7 @@ wangEditor 是以数据为驱动渲染页面，在更改 editor.children 数据�
 
 可以在 `changeViewState` 方法上打上断点，通过函数执行栈找到触发的事件，可以看到执行 apply 方法后，调用了 `editor.onChange` 方法
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/be56ecc60df5449aa3dd4e9d0587f213~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1004&h=441&s=69078&e=png&b=fefdfd)
+![](./image/debug16.png)
 
 onChange 通过事件派发，执行 changeViewState 重新渲染
 
@@ -181,7 +181,7 @@ onChange 通过事件派发，执行 changeViewState 重新渲染
 editor.on('change', this.changeViewState.bind(this))
 ```
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/160772382e674622a6504bd4f5a1c8ea~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=584&h=174&s=11842&e=png&b=fff7f6)
+![](./image/debug17.png)
 
 ## 疑问
 
@@ -189,7 +189,7 @@ editor.on('change', this.changeViewState.bind(this))
 
 通过阅读源码才知道，有个 `beforeinput` 事件，`event.preventDefault` 劫持所有的富文本输入
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9bb244d44c814289a8994726fed49bc3~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=979&h=375&s=63239&e=png&b=1e1e1e)
+![](./image/debug18.png)
 
 输入的内容，使用 slate.js `Editor.insertText` API 插入文本，这样就实现了直接修改数据后渲染
 
