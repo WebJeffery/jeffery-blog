@@ -465,6 +465,9 @@ git@github.com/mobile.git @mono/mobile packages/mobile
 ## 扩展阅读
 
 - 介绍实践 monorepo 生态：[awesome-monorepo](https://github.com/korfuri/awesome-monorepo)
+- [使用 NX+PNPM 搭建 Monorepo 项目](https://juejin.cn/post/7242623686900482108)
+- http://1.13.188.124/today/20230225.html
 
 - https://www.pipipi.net/26124.html
 - https://www.yangyitao.com/vue3/01.%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5-monorepo.html
+- https://notes.fe-mm.com/fe/monorepo/

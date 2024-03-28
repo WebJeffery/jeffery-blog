@@ -68,7 +68,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         {
           text: '前置知识',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: 'Vue3 源码学习指南',
@@ -81,63 +81,62 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             {
               text: 'monorepo 代码管理',
               link: '/analysis/vue3/base/monorepo'
-            },
-            {
-              text: 'package.json 解读',
-              link: '/analysis/vue3/base/package'
-            },
-            {
-              text: 'script 工作流',
-              link: '/analysis/vue3/base/script'
-            },
-            {
-              text: '构建工具',
-              link: '/analysis/vue3/base/build'
-            },
-            {
-              text: '测试工具',
-              link: '/analysis/vue3/base/test'
-            },
-            {
-              text: 'TypeScript',
-              link: '/analysis/vue3/base/typescript'
             }
+            // {
+            //   text: 'package.json 解读',
+            //   link: '/analysis/vue3/base/package'
+            // },
+            // {
+            //   text: 'script 工作流',
+            //   link: '/analysis/vue3/base/script'
+            // },
+            // {
+            //   text: '构建工具',
+            //   link: '/analysis/vue3/base/build'
+            // },
+            // {
+            //   text: '测试工具',
+            //   link: '/analysis/vue3/base/test'
+            // },
+            // {
+            //   text: 'TypeScript',
+            //   link: '/analysis/vue3/base/typescript'
+            // }
           ]
         },
         {
           text: '全局概览',
-          collapsed: false,
+          collapsed: true,
           items: [
+            {
+              text: 'Vue3 源码学习和调试',
+              link: '/analysis/vue3/global/debug'
+            },
             {
               text: 'Vue3 优化',
               link: '/analysis/vue3/global/optimize'
             },
             {
-              text: '目录结构分析',
+              text: 'Vue3 目录结构',
               link: '/analysis/vue3/global/directory'
-            },
-            {
-              text: '整体运行流程调试',
-              link: '/analysis/vue3/global/debug'
-            },
-
-            {
-              text: 'createApp',
-              link: '/analysis/vue3/global/createApp'
-            },
-            {
-              text: 'mount',
-              link: '/analysis/vue3/global/mount'
-            },
-            {
-              text: 'API 分析',
-              link: '/analysis/vue3/global/api'
             }
+            // {
+            //   text: 'createApp',
+            //   link: '/analysis/vue3/global/createApp'
+            // },
+            // {
+            //   text: 'mount',
+            //   link: '/analysis/vue3/global/mount'
+            // },
+            // {
+            //   text: 'API 分析',
+            //   link: '/analysis/vue3/global/api'
+            // }
           ]
         },
         {
           text: '响应式原理',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: 'effect副作用函数',
@@ -167,7 +166,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: '生命周期',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: 'setup 函数',
@@ -181,7 +180,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: '事件',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: 'DOM事件',
@@ -195,7 +194,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: '组件',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: '组件注册',
@@ -221,7 +220,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: '内置组件',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: 'keep-alive',
@@ -243,7 +242,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: '模版编译',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: '生成AST对象',
@@ -265,7 +264,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
         {
           text: 'directive指令',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: '指令渲染',
