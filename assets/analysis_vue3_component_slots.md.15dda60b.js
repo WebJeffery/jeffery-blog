@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as s}from"./chunks/framework.69210375.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"analysis/vue3/component/slots.md","lastUpdated":1711638490000}'),a={name:"analysis/vue3/component/slots.md"};function o(n,r,c,p,l,d){return e(),s("div")}const m=t(a,[["render",o]]);export{_ as __pageData,m as default};

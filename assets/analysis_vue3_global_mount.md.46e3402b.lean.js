@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./chunks/framework.69210375.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"analysis/vue3/global/mount.md","lastUpdated":1711638490000}'),o={name:"analysis/vue3/global/mount.md"};function s(n,r,c,l,p,d){return e(),a("div")}const _=t(o,[["render",s]]);export{m as __pageData,_ as default};

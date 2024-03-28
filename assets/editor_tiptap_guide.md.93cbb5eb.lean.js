@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./chunks/framework.69210375.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"editor/tiptap/guide.md","lastUpdated":1711638490000}'),r={name:"editor/tiptap/guide.md"};function o(s,d,i,p,c,n){return e(),a("div")}const f=t(r,[["render",o]]);export{m as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t}from"./chunks/framework.69210375.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"analysis/vue3/global/createApp.md","lastUpdated":1711638490000}'),r={name:"analysis/vue3/global/createApp.md"};function s(o,c,p,n,l,d){return a(),t("div")}const m=e(r,[["render",s]]);export{_ as __pageData,m as default};
